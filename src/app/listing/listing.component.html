@@ -1,0 +1,21 @@
+<div *ngIf='listing'>
+
+
+    <md-card class="example-card">
+        <md-card-header>
+            <div md-card-avatar class="example-header-image"></div>
+            <md-card-title> {{listing.title}}</md-card-title>
+
+        </md-card-header>
+        <img md-card-image src="{{imageurl}}">
+        <md-card-content>
+            <p>
+                {{listing.message}}
+            </p>
+        </md-card-content>
+        <md-card-actions>
+            <a routerLink="/listings">back</a>
+
+        </md-card-actions>
+    </md-card>
+</div>

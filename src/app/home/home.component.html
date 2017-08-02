@@ -1,0 +1,38 @@
+<div *shellNoRender class="example-card">
+    <md-card>
+
+        <md-card-title>19+</md-card-title>
+        <md-card-subtitle>Viewer discretion is advised signup using</md-card-subtitle>
+        <md-card-actions *ngIf='!( user | async)'>
+            <button md-button (click)="login()">Google<md-icon>person</md-icon></button>
+        </md-card-actions>
+        <md-card-actions *ngIf='( user | async)'>
+            <button md-button>{{name.displayName}}</button>
+        </md-card-actions>
+
+    </md-card>
+</div>
+<div *shellRender>
+    <p class="loader">
+        <md-spinner></md-spinner>
+    </p>
+
+
+</div>
+<!--<md-card-actions>
+  <button  md-button (click)="moe($event)"><md-icon>pets</md-icon></button>
+</md-card-actions>
+<md-card class="example-card" [class.selected]="issel(jok)" *ngFor='let jok of joke'>
+  <md-card-header >
+    <div md-card-avatar class="example-header-image"></div>
+    <md-card-title [ngStyle]="{background:jok.setup}">{{jok.setup }}</md-card-title>
+
+  </md-card-header>
+
+  <md-card-content>
+      <p [hidden]="jok.hide">{{jok.punchline}}</p>
+  </md-card-content>
+  <md-card-actions>
+  <button md-button (click)="onselect(jok)"><md-icon>pets</md-icon></button>
+</md-card-actions>
+</md-card>-->

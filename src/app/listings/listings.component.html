@@ -1,0 +1,25 @@
+<div *ngIf='status===false'>
+
+    <div *ngIf='!error'>
+        <md-card class="example-card" *ngFor="let m of list">
+            <md-card-header>
+                <div md-card-avatar class="example-header-image"></div>
+                <md-card-title><a [routerLink]="['/listing/'+m.$key]">{{m.title | uppercase}}</a></md-card-title>
+                <md-card-subtitle>by tiwa</md-card-subtitle>
+            </md-card-header>
+
+        </md-card>
+    </div>
+    <div *ngIf='error'>
+        {{error}}
+
+    </div>
+</div>
+<div *ngIf='status===true'>
+
+    <p class="loader">
+        <md-spinner></md-spinner>
+    </p>
+
+
+</div>

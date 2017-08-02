@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+md-card {
+    max-width: 80%;
+    margin: none;
+    text-align: center;
+}
+
+md-toolbar-row {
+    justify-content: space-between;
+}
+
+.done {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-left: 3px;
+}
+
+.display {
+    display: inline;
+}
+
+li {
+    display: inline;
+    width: 100%;
+}
+
+ul {
+    position: fixed;
+}
+
+a {
+    border: soild 3px black;
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    font-size: 15px;
+    margin: none;
+}
+
+.login {
+    padding-left: 13px;
+    right: 30px;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.bar {
+    margin: none;
+    color: white;
+    font-family: Arial;
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    position: relative;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.relative {
+    top: 7px;
+    position: fixed;
+    right: 20px;
+    font-family: Arial;
+    margin: 4px;
+}
+
+md-button {
+    top: 10px;
+    position: fixed;
+    right: 20px;
+    font-family: Arial;
+    font-size: 32px;
+    margin: 4px;
+}
+
+.home {
+    margin: 12px;
+    position: fixed;
+    left: 120px;
+    top: -8px;
+}
+
+.logo {
+    font-size: 120px;
+}
+
+button {
+    background-color: #424242;
+    border-radius: 25px;
+}
+
+fixied {
+    position: fixed;
+}

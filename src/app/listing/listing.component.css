@@ -1,0 +1,13 @@
+.example-card {
+    width: 400px;
+    margin: 10px;
+}
+
+.example-header-image {
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

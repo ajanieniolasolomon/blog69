@@ -1,0 +1,32 @@
+<div class="fixied">
+    <md-toolbar class="bar" color="primary">
+
+
+        <span *ngIf="!( user | async)" class="right"><a  routerLink="/">😍Blog 69</a></span>
+        <li *ngIf="(user | async )"><a routerLink="/">{{name.displayName}}</a></li>
+
+        <a *ngIf="( user | async)" class="home" routerLink="/listings">Blogs</a>
+        <div>
+
+
+            <button *ngIf="!( user | async)" class="relative" (click)="login()" md-button>login<md-icon>account_box</md-icon></button>
+
+            <button *ngIf="( user | async)" class="relative" (click)="logout()" md-button>logout<md-icon>account_box</md-icon></button>
+
+
+
+
+        </div>
+
+    </md-toolbar>
+
+    <!--  <md-toolbar *ngIf="( user | async)" class="bar" color="primary">
+        <nav md-tab-nav-bar>
+            <a md-tab-link routerLink="/listings">blog</a>
+            <a md-tab-link routerLink="/add">add</a>
+
+        </nav>
+    </md-toolbar>-->
+
+    <router-outlet></router-outlet>
+</div>

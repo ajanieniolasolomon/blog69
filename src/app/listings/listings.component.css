@@ -1,0 +1,34 @@
+.example-card {
+    margin: auto;
+    width: auto%;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.example-header-image {
+    background-image: url('/assets/blog.jpg');
+    background-size: cover;
+}
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: palevioletred;
+    text-align: center;
+    top: 190px;
+    left: 40%;
+    font-size: 20px;
+}
+
+md-spinner {}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+md-card-title {
+    text-decoration: none;
+    color: whitesmoke;
+}
